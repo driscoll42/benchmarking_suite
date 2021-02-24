@@ -22,7 +22,6 @@ import sysinfo
 
 # TODO: track CPU temp - https://hemant9807.blogspot.com/2020/11/get-cpu-and-gpu-temp-using-python.html
 # TODO: Use MSI Afterburner?
-# TODO: y-cruncher multi - I think it's a my CPU issue
 # TODO: Autodownload
 # TODO: Config file
 
@@ -30,6 +29,7 @@ import sysinfo
 # https://stackoverflow.com/questions/4664850/how-to-find-all-occurrences-of-a-substring
 def findOccurrences(full_string, sub_str):
     return [m.start() for m in re.finditer(sub_str, full_string)]
+
 
 def run_benchmark(num_runs, sleep_time, base_dir, bench_path, bench_name, args, out_start, out_end, caching_runs=0,
                   shell_val=False, read_from_file=False, csv_name='benchmarks.csv', split_pos=0, out_start2='',
@@ -44,8 +44,9 @@ def run_benchmark(num_runs, sleep_time, base_dir, bench_path, bench_name, args, 
 
     except:
         # if file does not exist, create it
-        dict = {'Run Datetime': [], 'Benchmark': [], 'Avg Score': [], 'Average Runtime': [], 'Stdev Score': [],
-                'Stdev Time'  : [], 'Scores': [], 'Runtimes': [], 'args': [], 'Windows Version': [], 'Computer Name': []}
+        dict = {'Run Datetime' : [], 'Benchmark': [], 'Avg Score': [], 'Average Runtime': [], 'Stdev Score': [],
+                'Stdev Time'   : [], 'Scores': [], 'Runtimes': [], 'args': [], 'Windows Version': [],
+                'Computer Name': []}
         df = pd.DataFrame(dict)
 
     scores = []
@@ -185,8 +186,6 @@ if __name__ == "__main__":
                   bench_name2='CPUZ Multi Thread',
                   out_start2='","', out_end2='"', split_pos2=0, occur_val=0)
 
-
-
     # GPUPI 3.3.3 100m
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'GPUPI 3.3.3 100M',
                   [base_dir + bench_path + "GPUPI 3.3.3\\GPUPI-CLI.exe", "-d", "100M", "-c"],
@@ -225,7 +224,6 @@ if __name__ == "__main__":
                    base_dir + bench_path + "blender_scenes\\barbershop_interior\\main.blend", "--python",
                    base_dir + bench_path + "blender-benchmark-script-2.0.0\\main.py", "--", "--device-type", "CPU"]
                   , 'Total render time:', ' I', shell_val=True, csv_name=csv_name, split_pos=0, stdout=False)
-
 
     # Blender CPU classroom
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'Blender CPU classroom',
@@ -281,7 +279,6 @@ if __name__ == "__main__":
                    base_dir + bench_path + "blender-benchmark-script-2.0.0\\main.py", "--", "--device-type", "CPU"]
                   , 'Total render time:', ' I', shell_val=True, csv_name=csv_name, split_pos=0, stdout=False)
 
-
     # Blender CPU BMW27
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'Blender CPU BMW27',
                   [base_dir + bench_path + "blender-2.91.2-windows64\\blender.exe", "--background", "--factory-startup",
@@ -305,37 +302,43 @@ if __name__ == "__main__":
 
     # Run y-cruncher 25m Single
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'y-cruncher 25m Single',
-                  [base_dir + bench_path + "y-cruncher v0.7.8.9507\\y-cruncher.exe", "colors:0", "priority:2", "bench", "25m",
+                  [base_dir + bench_path + "y-cruncher v0.7.8.9507\\y-cruncher.exe", "colors:0", "priority:2", "bench",
+                   "25m",
                    "-TD:1", "-PF:none", "-o", base_dir + bench_path + "Results", "-od:0"],
                   'Total Computation Time: ', ' seconds', shell_val=True, read_from_file=True, csv_name=csv_name)
 
     # Run y-cruncher 250m Single
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'y-cruncher 250m Single',
-                  [base_dir + bench_path + "y-cruncher v0.7.8.9507\\y-cruncher.exe", "colors:0", "priority:2", "bench", "250m",
+                  [base_dir + bench_path + "y-cruncher v0.7.8.9507\\y-cruncher.exe", "colors:0", "priority:2", "bench",
+                   "250m",
                    "-TD:1", "-PF:none", "-o", base_dir + bench_path + "Results", "-od:0"],
                   'Total Computation Time: ', ' seconds', shell_val=True, read_from_file=True, csv_name=csv_name)
 
     # Run y-cruncher 1b Single
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'y-cruncher 1b Single',
-                  [base_dir + bench_path + "y-cruncher v0.7.8.9507\\y-cruncher.exe", "colors:0", "priority:2", "bench", "1b",
+                  [base_dir + bench_path + "y-cruncher v0.7.8.9507\\y-cruncher.exe", "colors:0", "priority:2", "bench",
+                   "1b",
                    "-TD:1", "-PF:none", "-o", base_dir + bench_path + "Results", "-od:0"],
                   'Total Computation Time: ', ' seconds', shell_val=True, read_from_file=True, csv_name=csv_name)
 
     # Run y-cruncher 2.5b Single
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'y-cruncher 2.5b Single',
-                  [base_dir + bench_path + "y-cruncher v0.7.8.9507\\y-cruncher.exe", "colors:0", "priority:2", "bench", "2.5b",
+                  [base_dir + bench_path + "y-cruncher v0.7.8.9507\\y-cruncher.exe", "colors:0", "priority:2", "bench",
+                   "2.5b",
                    "-TD:1", "-PF:none", "-o", base_dir + bench_path + "Results", "-od:0"],
                   'Total Computation Time: ', ' seconds', shell_val=True, read_from_file=True, csv_name=csv_name)
 
     # Run y-cruncher 10b Single
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'y-cruncher 10b Single',
-                  [base_dir + bench_path + "y-cruncher v0.7.8.9507\\y-cruncher.exe", "colors:0", "priority:2", "bench", "10b",
+                  [base_dir + bench_path + "y-cruncher v0.7.8.9507\\y-cruncher.exe", "colors:0", "priority:2", "bench",
+                   "10b",
                    "-TD:1", "-PF:none", "-o", base_dir + bench_path + "Results", "-od:0"],
                   'Total Computation Time: ', ' seconds', shell_val=True, read_from_file=True, csv_name=csv_name)
 
     # Run pifast
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'pifast',
-                  [base_dir + bench_path + "hexus_pifast\\pifast41.exe", "<" + base_dir + bench_path + "hexus_pifast\\hexus.txt"],
+                  [base_dir + bench_path + "hexus_pifast\\pifast41.exe",
+                   "<" + base_dir + bench_path + "hexus_pifast\\hexus.txt"],
                   'Total computation time : ', ' seconds', shell_val=True, csv_name=csv_name)
 
     # Run Cinebench R23 Single
@@ -389,18 +392,20 @@ if __name__ == "__main__":
                   [base_dir + bench_path + "CinebenchR20\\Cinebench.exe", "-g_CinebenchCpu1Test=true"],
                   'CB ', ' ', csv_name=csv_name)
 
-
     # Run Cinebench R15 Extreme OpenGL
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'Cinebench 15 Extreme OpenGL',
-                  [base_dir + bench_path + "CINEBENCH R15.038_RC184115_Extreme\\CINEBENCH Windows 64 Bit.exe", "-cb_opengl"],
+                  [base_dir + bench_path + "CINEBENCH R15.038_RC184115_Extreme\\CINEBENCH Windows 64 Bit.exe",
+                   "-cb_opengl"],
                   '                : ', ' fps', csv_name=csv_name)
 
     # Run Cinebench R15 Extreme Single
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'Cinebench 15 Extreme Single',
-                  [base_dir + bench_path + "CINEBENCH R15.038_RC184115_Extreme\\CINEBENCH Windows 64 Bit.exe", "-cb_cpu1"],
+                  [base_dir + bench_path + "CINEBENCH R15.038_RC184115_Extreme\\CINEBENCH Windows 64 Bit.exe",
+                   "-cb_cpu1"],
                   ' : ', ' pts', csv_name=csv_name)
 
     # Run Cinebench R15 Extreme Multi
     run_benchmark(num_runs, sleep_timer, base_dir, bench_path, 'Cinebench 15 Extreme Multi',
-                  [base_dir + bench_path + "CINEBENCH R15.038_RC184115_Extreme\\CINEBENCH Windows 64 Bit.exe", "-cb_cpux"],
+                  [base_dir + bench_path + "CINEBENCH R15.038_RC184115_Extreme\\CINEBENCH Windows 64 Bit.exe",
+                   "-cb_cpux"],
                   ' : ', ' pts', csv_name=csv_name)
