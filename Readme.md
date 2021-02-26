@@ -38,25 +38,25 @@ Note: I have only tested this on my personal computers, if bugs are found please
 [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) | | Download zip and open "cpuz_readme.txt"
 
 ### Unsupported CPU Benchmarks
-| Benchmark  |  Reason for Lack of Support
-| --------  |  --------------------- |
+| Benchmark  |  Reason for Lack of Support | CLI Documentation
+| --------  |  --------------------- | --------------------- |
 [HWBot x265](https://hwbot.org/benchmark/hwbot_x265_benchmark_-_1080p/) |	No CLI Interface
 [HWBOT Prime](https://hwbot.org/benchmark/hwbot_prime/) |No CLI Interface
 [Super Pi](http://www.superpi.net/) | No CLI Interface
 [Corona 1.3](https://blog.corona-renderer.com/corona-1-3-benchmark/) | No CLI Interface (Anandtech has a special version with CLI)
 [XTU](https://downloadcenter.intel.com/download/29183/Intel-Extreme-Tuning-Utility-Intel-XTU-)|Not supported on AMD CPUs
-[Geekbench 3](https://www.geekbench.com/geekbench3/)| Requires Pro License for CLI
-[Geekbench 4](https://www.geekbench.com/geekbench4/) | Requires Pro License for CLI
-[Geekbench 5](https://www.geekbench.com/)	| Requires Pro License for CLI
-[SPEC 2006](https://www.spec.org/cpu2006/) | Requires Pro License for CLI
-[SPEC CPU 2017](https://www.spec.org/cpu2017/)	| Requires Pro License for CLI
+[Geekbench 3](https://www.geekbench.com/geekbench3/)| Requires Pro License for CLI | [Link](http://support.primatelabs.com/kb/geekbench/geekbench-3-command-line-tool)
+[Geekbench 4](https://www.geekbench.com/geekbench4/) | Requires Pro License for CLI | [Link](http://support.primatelabs.com/kb/geekbench/geekbench-4-pro-command-line-tool)
+[Geekbench 5](https://www.geekbench.com/)	| Requires Pro License for CLI | [Link](http://support.primatelabs.com/kb/geekbench/geekbench-5-pro-command-line-tool)
+[SPEC 2006](https://www.spec.org/cpu2006/) | Requires Pro License for CLI | [Link](https://www.spec.org/cpu2006/Docs/install-guide-windows.html)
+[SPEC CPU 2017](https://www.spec.org/cpu2017/)	| Requires Pro License for CLI | [Link](https://www.spec.org/cpu2017/Docs/install-guide-windows.html)
 [PCMark2002](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
 [PCMark04](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
 [PCMark05](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
-[PCMark Vantage](https://benchmarks.ul.com/legacy-benchmarks) | Requires Pro License for CLI
-[PCMark 7](https://benchmarks.ul.com/legacy-benchmarks) | Requires Pro License for CLI
-[PCMark 8](https://benchmarks.ul.com/legacy-benchmarks) | Requires Pro License for CLI
-[PCMark 10](https://benchmarks.ul.com/pcmark10) |Requires Pro License for CLI
+[PCMark Vantage](https://benchmarks.ul.com/legacy-benchmarks) | Requires Pro License for CLI | [Link](https://s3.amazonaws.com/download-aws.futuremark.com/PCMark_Vantage_Whitepaper.pdf)
+[PCMark 7](https://benchmarks.ul.com/legacy-benchmarks) | Requires Pro License for CLI | [Link](https://s3.amazonaws.com/download-aws.futuremark.com/pcmark7-command-line-guide.pdf)
+[PCMark 8](https://benchmarks.ul.com/legacy-benchmarks) | Requires Pro License for CLI | [Link](https://s3.amazonaws.com/download-aws.futuremark.com/pcmark8-command-line-guide.pdf)
+[PCMark 10](https://benchmarks.ul.com/pcmark10) |Requires Pro License for CLI | [Link](https://s3.amazonaws.com/download-aws.futuremark.com/pcmark10-command-line-guide.pdf)
 [PCMark2002](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
 [3DMark99](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
 [3DMark2000](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
@@ -64,10 +64,10 @@ Note: I have only tested this on my personal computers, if bugs are found please
 [3DMark03](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
 [3DMark05](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
 [3DMark06](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
-[3DMark Vantage](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
-[3DMark 11](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
-[3DMark](https://benchmarks.ul.com/3dmark) |Requires Pro License for CLI
-[VRMark](https://benchmarks.ul.com/vrmark) |Requires Pro License for CLI
+[3DMark Vantage](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI | [Link](https://s3.amazonaws.com/download-aws.futuremark.com/3DMark-Vantage-CommandLineGuide.pdf)
+[3DMark 11](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI | [Link](https://s3.amazonaws.com/download-aws.futuremark.com/3dmark11-command-line-guide.pdf)
+[3DMark](https://benchmarks.ul.com/3dmark) |Requires Pro License for CLI | [Link](https://support.benchmarks.ul.com/en/support/solutions/articles/44002145411-run-3dmark-benchmarks-from-the-command-line)
+[VRMark](https://benchmarks.ul.com/vrmark) |Requires Pro License for CLI | [Link](https://s3.amazonaws.com/download-aws.futuremark.com/vrmark-command-line-guide.pdf)
 
 ### Potential CPU Benchmarks
 | Benchmark  | Official CLI Documentation | Unofficial CLI Documentation | Notes
