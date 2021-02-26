@@ -12,6 +12,8 @@ This is a benchmarking suite to automate running various benchmarks on your mach
 * Store output into csv for future reference
 * Extract OS, CPU, GPU, driver versions and other system data on each run
 
+Note: This repo does not contain any of the benchmarks inherently as I do not have permission to share them. Please see the Install instructions below for how to set up the benchmarks
+
 Note: Currently only supports Windows-based CPU benchmarks
 
 Note: I have only tested this on my personal computers, if bugs are found please report them!
@@ -20,20 +22,20 @@ Note: I have only tested this on my personal computers, if bugs are found please
 
 ### Implemented CPU Benchmarks
 
-| Benchmark  | Official CLI Documentation | Unofficial CLI Documentation | Notes
-| --------  | ------------------- | --------------------- | --------------------- |
-[Cinebench R11.5](https://www.guru3d.com/files-details/cinebench-11-5.html) | |		[Link](http://forum.notebookreview.com/threads/cinebench-r15-r15-extreme-r20-command-line-syntax-bat-loop-detailed-output.815101/) |
-[Cinebench R15](https://www.techspot.com/downloads/6709-cinebench.html) | |		[Link](http://forum.notebookreview.com/threads/cinebench-r15-r15-extreme-r20-command-line-syntax-bat-loop-detailed-output.815101/)
-[Cinebench R15 Extreme](https://www.guru3d.com/files-details/cinebench-r15-extreme-edition-download.html) | | [Link](http://forum.notebookreview.com/threads/cinebench-r15-r15-extreme-r20-command-line-syntax-bat-loop-detailed-output.815101/)			
-[Cinebench R20](https://www.techspot.com/downloads/6709-cinebench.html) | |		[Link](http://forum.notebookreview.com/threads/cinebench-r15-r15-extreme-r20-command-line-syntax-bat-loop-detailed-output.815101/)
-[Cinebench R23](https://www.maxon.net/en/downloads) |	[Link](https://www.maxon.net/en/cinebench) | [Link](http://forum.notebookreview.com/threads/cinebench-r15-r15-extreme-r20-command-line-syntax-bat-loop-detailed-output.815101/)
-[Pi Fast](https://hwbot.org/benchmark/pifast/) |	| | Not really CLI, loads file	
-[y-cruncher](http://www.numberworld.org/y-cruncher/) |	Download zip and open "Command Lines.txt"		
-[Blender](https://opendata.blender.org/) |	[Link](https://opendata.blender.org/about/)	
-[7 Zip](https://www.7-zip.org/) |	[Link](	https://documentation.help/7-Zip/bench.htm)	
-[GPUPI 3.3.3](https://www.overclockers.at/news/gpupi-international-support-thread) |	[Link](https://www.overclockers.at/news/gpupi-3-is-now-official)	
-[GPUPI 3.2](https://www.overclockers.at/news/gpupi-international-support-thread) |		[Link](https://www.overclockers.at/news/gpupi-3-is-now-official)
-[CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) | Download zip and open "cpuz_readme.txt"
+| Benchmark  | Description | Official CLI Documentation | Unofficial CLI Documentation | Notes
+| --------  | ------------------- |------------------- | --------------------- | --------------------- |
+[Cinebench R11.5](https://www.guru3d.com/files-details/cinebench-11-5.html) | | |		[Link](http://forum.notebookreview.com/threads/cinebench-r15-r15-extreme-r20-command-line-syntax-bat-loop-detailed-output.815101/) |
+[Cinebench R15](https://www.techspot.com/downloads/6709-cinebench.html) | | |		[Link](http://forum.notebookreview.com/threads/cinebench-r15-r15-extreme-r20-command-line-syntax-bat-loop-detailed-output.815101/)
+[Cinebench R15 Extreme](https://www.guru3d.com/files-details/cinebench-r15-extreme-edition-download.html) | | | [Link](http://forum.notebookreview.com/threads/cinebench-r15-r15-extreme-r20-command-line-syntax-bat-loop-detailed-output.815101/)			
+[Cinebench R20](https://www.techspot.com/downloads/6709-cinebench.html) | | |		[Link](http://forum.notebookreview.com/threads/cinebench-r15-r15-extreme-r20-command-line-syntax-bat-loop-detailed-output.815101/)
+[Cinebench R23](https://www.maxon.net/en/downloads) | |	[Link](https://www.maxon.net/en/cinebench) | [Link](http://forum.notebookreview.com/threads/cinebench-r15-r15-extreme-r20-command-line-syntax-bat-loop-detailed-output.815101/)
+[Pi Fast](https://hwbot.org/benchmark/pifast/) |	|| | Not really CLI, loads file	
+[y-cruncher](http://www.numberworld.org/y-cruncher/) | |	Download zip and open "Command Lines.txt"		
+[Blender](https://opendata.blender.org/) | |	[Link](https://opendata.blender.org/about/)	
+[7 Zip](https://www.7-zip.org/) | |	[Link](	https://documentation.help/7-Zip/bench.htm)	
+[GPUPI 3.3.3](https://www.overclockers.at/news/gpupi-international-support-thread) | |	[Link](https://www.overclockers.at/news/gpupi-3-is-now-official)	
+[GPUPI 3.2](https://www.overclockers.at/news/gpupi-international-support-thread) | |		[Link](https://www.overclockers.at/news/gpupi-3-is-now-official)
+[CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) | | Download zip and open "cpuz_readme.txt"
 
 ### Unsupported CPU Benchmarks
 | Benchmark  |  Reason for Lack of Support
@@ -42,12 +44,30 @@ Note: I have only tested this on my personal computers, if bugs are found please
 [HWBOT Prime](https://hwbot.org/benchmark/hwbot_prime/) |No CLI Interface
 [Super Pi](http://www.superpi.net/) | No CLI Interface
 [Corona 1.3](https://blog.corona-renderer.com/corona-1-3-benchmark/) | No CLI Interface (Anandtech has a special version with CLI)
-[Geekbench 3](https://www.geekbench.com/geekbench3/)| Requires Pro License
-[Geekbench 4](https://www.geekbench.com/geekbench4/) | Requires Pro License
-[Geekbench 5](https://www.geekbench.com/)	| Requires Pro License
-[SPEC 2006](https://www.spec.org/cpu2006/) | Requires Pro License
-[SPEC CPU 2017](https://www.spec.org/cpu2017/)	| Requires Pro License
 [XTU](https://downloadcenter.intel.com/download/29183/Intel-Extreme-Tuning-Utility-Intel-XTU-)|Not supported on AMD CPUs
+[Geekbench 3](https://www.geekbench.com/geekbench3/)| Requires Pro License for CLI
+[Geekbench 4](https://www.geekbench.com/geekbench4/) | Requires Pro License for CLI
+[Geekbench 5](https://www.geekbench.com/)	| Requires Pro License for CLI
+[SPEC 2006](https://www.spec.org/cpu2006/) | Requires Pro License for CLI
+[SPEC CPU 2017](https://www.spec.org/cpu2017/)	| Requires Pro License for CLI
+[PCMark2002](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[PCMark04](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[PCMark05](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[PCMark Vantage](https://benchmarks.ul.com/legacy-benchmarks) | Requires Pro License for CLI
+[PCMark 7](https://benchmarks.ul.com/legacy-benchmarks) | Requires Pro License for CLI
+[PCMark 8](https://benchmarks.ul.com/legacy-benchmarks) | Requires Pro License for CLI
+[PCMark 10](https://benchmarks.ul.com/pcmark10) |Requires Pro License for CLI
+[PCMark2002](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[3DMark99](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[3DMark2000](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[3DMark2001](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[3DMark03](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[3DMark05](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[3DMark06](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[3DMark Vantage](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[3DMark 11](https://benchmarks.ul.com/legacy-benchmarks) |Requires Pro License for CLI
+[3DMark](https://benchmarks.ul.com/3dmark) |Requires Pro License for CLI
+[VRMark](https://benchmarks.ul.com/vrmark) |Requires Pro License for CLI
 
 ### Potential CPU Benchmarks
 | Benchmark  | Official CLI Documentation | Unofficial CLI Documentation | Notes
@@ -63,10 +83,6 @@ Sisoft Sandra Crytp		 |
 Cygwin GCC 9.3.0 Compile with MT |
 Chromium Compile with MSVC, Clang, Ninja |
 [Prime95](https://www.mersenne.org/download/) |
-[PCMark 7](https://benchmarks.ul.com/legacy-benchmarks) |
-[PCMark Vantage](https://benchmarks.ul.com/legacy-benchmarks) |
-[PCMark04](https://benchmarks.ul.com/legacy-benchmarks) |
-[PCMark10](https://benchmarks.ul.com/pcmark10) |
 Adobe After Effects 2020 Puget Systesms |
 Matlab R2020 Built-In Bnechmark |
 Microsfot Excel Large Number Crunching Test |
@@ -124,7 +140,6 @@ LinX 0.9.5 LINPACK (where appropriate) |
 [GPUPI 3.2](https://www.overclockers.at/news/gpupi-international-support-thread) |		[Link](https://www.overclockers.at/news/gpupi-3-is-now-official)
 [Blender](https://opendata.blender.org/) |	[Link](https://opendata.blender.org/about/)	
 Unigine Benchmarks |
-3D Mark | 
 Many game benchmarks |
 
 # Install Instructions

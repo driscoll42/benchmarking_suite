@@ -15,10 +15,11 @@ import sysinfo
 # TODO: Get HDD Details
 # TODO: Use Current directory
 # TODO: Make Stress testing mode, basic mode, exhaustive mode, super exhaustive mode, hwbot mode
-# TODO: Readme.md with table
 # TODO: Steps to setup Blender
 # TODO: GPUPi reminders
 # TODO: Version independent
+# TODO: Create environment.yml
+# TODO: Readmes per supported benchmark
 
 # TODO: track CPU temp - https://hemant9807.blogspot.com/2020/11/get-cpu-and-gpu-temp-using-python.html
 # TODO: Use MSI Afterburner?
